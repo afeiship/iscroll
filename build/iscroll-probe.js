@@ -430,8 +430,10 @@ IScroll.prototype = {
 			return;
 		}
 
-		if ( this.options.preventDefault && !utils.isBadAndroid && !utils.preventDefaultException(e.target, this.options.preventDefaultException) ) {
+		if (this.options.preventDefault && !utils.isBadAndroid && !utils.preventDefaultException(e.target, this.options.preventDefaultException)) {
 			e.preventDefault();
+		} else {
+			return;
 		}
 
 		var point = e.touches ? e.touches[0] : e,
