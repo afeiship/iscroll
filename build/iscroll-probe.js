@@ -1674,13 +1674,13 @@ function createDefaultScrollbar (direction, interactive, type) {
 
 	if ( direction == 'h' ) {
 		if ( type === true ) {
-			scrollbar.style.cssText += ';height:4px;left:2px;right:2px;bottom:0';
+			scrollbar.style.cssText += ';height:3px;left:2px;right:2px;bottom:0';
 			indicator.style.height = '100%';
 		}
 		scrollbar.className = 'iScrollHorizontalScrollbar';
 	} else {
 		if ( type === true ) {
-			scrollbar.style.cssText += ';width:4px;bottom:2px;top:2px;right:1px';
+			scrollbar.style.cssText += ';width:3px;bottom:2px;top:2px;right:1px';
 			indicator.style.width = '100%';
 		}
 		scrollbar.className = 'iScrollVerticalScrollbar';
