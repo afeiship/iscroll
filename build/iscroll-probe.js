@@ -298,7 +298,7 @@ function IScroll (el, options) {
 		bounceEasing: '',
 
 		preventDefault: true,
-		preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT)$/ },
+		preventDefaultException: { tagName: /^(INPUT|TEXTAREA|SELECT)$/ },
 
 		HWCompositing: true,
 		useTransition: true,
